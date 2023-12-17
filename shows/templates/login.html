@@ -2,20 +2,19 @@
 <html>
 <head>
     <title>User Login</title>
-    <link rel="stylesheet" href="user_login.css">
+    <link rel="stylesheet" href="static/css/user_login.css">
 </head>
 
 <body>
     <div class="body">
         <div class="container">
-            <form action="./seatselectioncss.html"> <!-- Use 'action' attribute in the form tag -->
+            <form action="./user_login_new.html" method="POST"> {% csrf_token %} <!-- Use 'action' attribute in the form tag -->
                 <div class="head">
                     <span>Login</span>
                 </div>
                 <div class="inputs">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                    <input type="text" id="username" name="username" placeholder="Full Name">
+                    <input type="password"  id="password" name="password" placeholder="Password">
                 </div>
                 <button type="submit">Login</button>
             </form>
