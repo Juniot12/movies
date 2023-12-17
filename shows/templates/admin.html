@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminlogin</title>
+    <style>
+        /* Center everything */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: beige; /* Background color for the page */
+        }
+
+        /* Style for the form container */
+        form {
+            text-align: center;
+            background-color: black; /* Background color for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+            color: white; /* Text color in the form */
+        }
+
+        h1 {
+            font-size: 24px; /* Increase the font size of the "ADMIN LOGIN" text */
+        }
+
+        /* Add additional styles if needed */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white; /* Text color for labels */
+        }
+
+        input[type="button"] {
+            background-color: brown; /* Set background color for the login button to brown */
+            color: white; /* Text color for the login button */
+            padding: 8px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default button underline */
+            display: inline-block; /* Keep button inline with text */
+        }
+
+        input[type="button"]:hover {
+            background-color: darkred; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="./admin.html" method="POST"></form>
+        <h1><strong>ADMIN LOGIN:</strong></h1>
+        <br><br>
+
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username">
+
+        <br><br>
+
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>

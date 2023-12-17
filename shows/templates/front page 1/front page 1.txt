@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>admin user</title>
+</head>
+
+<style>
+     body {
+            text-align: center;
+        }
+
+
+    /* Basic button styles */
+    button {
+        
+        background-color: #021302; /* Green */
+        color: white;
+         
+        padding: 30px 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px; /* Rounded corners */
+    }
+
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #45a049; /* Darker green */
+        
+    }
+
+    p {
+            font-size: 60px; /* Adjust the font size as needed */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-top: 5; /* Remove default margin from the paragraph */
+        }
+</style>
+
+<body>
+
+    <p><strong>movies</strong></p><br><br><br>
+
+    
+
+    <a href="./adlogin3.html"><button>admin</button></a>
+    <br><br><br>
+    <a href="./userlogin.html"><button>user</button></a>
+    
+
+    
+
+    
+</body>
+
+
+</html>

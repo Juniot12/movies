@@ -1,0 +1,39 @@
+/* Center everything */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Background color for the page */
+}
+
+/* Style for the form container */
+form {
+    text-align: center;
+    background-color: #ffffff; /* Background color for the form */
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    width: 280px; /* Set the width as per your requirement */
+}
+
+select {
+    padding: 8px;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px; /* Increase the font size of the "Login" text */
+}
+
+/* Add additional styles if needed */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    width: 100%; /* Make the input fields take up the full width */
+}
