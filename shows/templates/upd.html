@@ -36,7 +36,7 @@
             box-sizing: border-box;
         }
 
-        button {
+        .button {
             background-color: #5f4339; /* Dark brown color for the button */
             color: white;
             padding: 10px 15px;
@@ -45,7 +45,7 @@
             cursor: pointer;
         }
 
-        button:hover {
+        .button:hover {
             background-color: #4a332a; /* Darker brown color on hover */
         }
     </style>
@@ -53,16 +53,15 @@
 </head>
 
 <body>
-    <form>
+    <form action="update.html" method="post">{% csrf_token %}
         <label for="movieName">Movie Name:</label>
         <input type="text" id="movieName" name="movieName" required>
 
         <label for="availableSeats">Currently Available Seats:</label>
         <input type="text" id="availableSeats" name="availableSeats" required>
 
-        <a href="./adminuser.html">
-            <button type="button">Update</button>
-        </a>
+        <input class="button" type="submit" value="Update">
+
     </form>
 </body>
 

@@ -47,7 +47,7 @@
         }
 
         /* Style for the login button */
-        a.button {
+        .button {
             display: block;
             background-color: rgb(76, 44, 6);
             color: white;
@@ -61,8 +61,8 @@
     </style>
 </head>
 <body>
-    <form>
-        <h1><strong>signup:</strong></h1>
+    <form action="signup.html" method="post">{% csrf_token %}
+        <h1><strong>Signup:</strong></h1>
         <br>
 
         <label for="username">Enter username:</label>
@@ -77,9 +77,9 @@
 
         <label for="question">Select your gender:</label>
         <select name="question" id="question">
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="3">Other</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
         </select>
 
         <br>
@@ -97,8 +97,7 @@
         <input type="password" id="password" name="password">
         <br>
 
-        <!-- Modified login button to use anchor tag -->
-        <a href="./seatselectioncss.html" class="button">signup</a>
+        <input class="button" type="submit" value="signup">
     </form>
 </body>
 </html>

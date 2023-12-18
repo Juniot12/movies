@@ -50,11 +50,11 @@
 </head>
 
 <body>
-    <form>
+    <form action="delete.html" method="post">{% csrf_token %}
         <label for="deleteMovie">Delete Movie:</label>
         <input type="text" id="deleteMovie" name="deleteMovie" placeholder="Enter movie name to delete">
         <br>
-        <a href="./" class="button">Delete</a>
+        <input class="button" type="submit" value="Delete">
     </form>
 </body>
 

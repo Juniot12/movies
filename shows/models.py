@@ -15,9 +15,8 @@ class bookingdetails(models.Model):
          theatre_name=models.CharField(max_length=30)
          no_oftickets=models.IntegerField()
          day=models.DateField()
-         time=models.TimeField()
-         language=models.CharField(max_length=20)
-         payment=models.IntegerField()
+         time=models.CharField(max_length=40)
+
 
 class admin(models.Model):
     aname=models.CharField(max_length=100)
@@ -29,6 +28,7 @@ class moviedetails(models.Model):
         rating=models.DecimalField(max_digits=3,decimal_places=2)
         theatre_name=models.CharField(max_length=50)
         seat_available=models.IntegerField()
+        seatAvail=models.IntegerField()
         language=models.CharField(max_length=30)
         
 
